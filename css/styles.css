@@ -1,0 +1,53 @@
+/*
+	WILLIAM NETO DETECTED
+	NON DESIGNER ALERT
+	!!!
+*/
+@font-face {
+	font-family: aldousvt;
+	src: url('../fonts/aldousvt.ttf')
+}
+
+body {	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 370px;
+	margin-left: 300px;
+}
+
+input {
+	font-size: 14pt;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #DEE6F3;
+}
+
+h1 {
+	font-family: aldousvt;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	padding: 70px;
+	color: #929AA6;
+	background-color: #C9D9F3;
+}
+
+.left{
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+.right{
+	float: right;
+	width:60%;
+	height: 100%;
+	background-color: #B7BDCE;
+	border-radius: 10px;
+}
+.tweet_list{
+	color: #282F43;
+	padding: 40px;
+	font-size: 13pt;
+}
