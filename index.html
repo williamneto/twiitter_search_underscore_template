@@ -5,8 +5,11 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		
+		// Importando jQuery
 		<script type="text/javascript" src="js/jquery-1.6.3.js"></script>
+		// Importando bibliote underscore
 		<script type="text/javascript" src="js/underscore-1.4.4.js"></script>
+		// Importando nosso codigo javascript
 		<script type="text/javascript" src="js/custom.js"></script>
 		
 	</head>
@@ -19,14 +22,24 @@
 			</div>
 			<div class="right">
 				<script type="text/html" class="template_render">
-					<div class='tweet'><% _.each(results, function(tweet){ %> <p class='tweet'><span class='user_screen_name'> <%= tweet.from_user %> </span><br> <%= tweet.text %></p> <% }); %></div>
+					<div class='tweet'>
+						// O ._each é como o loop for
+						// Percorre o campo results,que está dentro do objeto
+						// retornado pelo twitter,é um array contendo os tweets
+						<% _.each(results, function(tweet){ %> 
+							<p class='tweet'>
+							<span class='user_screen_name'> 
+							<%= tweet.from_user %> </span><br> 
+							<%= tweet.text %>
+							</p> 
+						<% }); %></div>
 				</script>
 				<div class="tweet_list">
 				</div>
 			</div>
 		</div>
 		
-		<div class="footer">Este &eacute; um exemplo de como usar templates da biblioteca javascrit underscore para renderizar dados JSON complexos mais rapidamente.<br>Confira o post completo no meu <a href="http://willcodando.techsempre.com/2013/02/javascript-renderizando-dados-complexos.html">blog</a><br>Qualquer duvida,williamneto@techsempre.com ou @williamjj7 no twitter</div>
+		<div class="footer">Para mais informacoes sobre a API de pesquisa do Twitter,seus parametros,e dados retornados,consulte a <a href="https://dev.twitter.com/docs/api/1/get/search">documentacao</a>.<br>Este &eacute; um exemplo de como usar templates da biblioteca javascrit underscore para renderizar dados JSON complexos mais rapidamente.<br>Confira o post completo no meu <a href="http://willcodando.techsempre.com/2013/02/javascript-renderizando-dados-complexos.html">blog</a><br>Qualquer duvida,williamneto@techsempre.com ou @williamjj7 no twitter</div>
 	<body>
 		
 	</body>
